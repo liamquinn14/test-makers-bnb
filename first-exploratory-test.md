@@ -1,14 +1,23 @@
 # First Exploratory Test for MakersBnB
 - 90 minutes
 
-## Questions
-- If you sign up, are you automatically logged in?
+## Assumptions
+- For the purpose of this test we are assuming that after signing up you are redirected to the Login page
 
-## Plan
-- Should test a happy path with regards to registration. Don't want to waste time typing fake emails.
-- Test the overall infrastructure of the application with a happy path in order to cover as many events as possible in 90 minutes.
-- 2 Users will list space, request and confirm it to form a booking. 
+## Purpose of Test
+
+Test the overall infrastructure of the application with a happy path in order to cover as many states as possible in 90 minutes. This test requires two users, User One and User Two. The tester can control both users. 
+
+See if:
+- User One can sign up and list a space
+- User Two can sign up and request the newly-listed space
+- User One can see the request and confirm the booking
+- User Two can log in and see the request updated as 'confirmed'
+
+Guide for the test:
+- Test a happy path with regards to registration. Don't want to waste time typing fake emails.
 - Make notes of possible areas to test in the future, and any ideas for edge cases
+- Make notes of any experiences with the application that contradict our prior assumptions from the wireframe. E.g. specific page routing
 
 ## Step 1: User One signs up and lists a space
 - Not signed up, Sign up screen => Enter valid email and password to sign up => Signed up, on Login screen
@@ -42,13 +51,23 @@
 - Check if request has updated from 'Not confirmed' to 'Confirmation'
 - Check if all confirmation emails were received
 
+## Expected outcome
+- Unsure of particular click-by-click details. The application may not behave exactly like the wireframe. These details can be clarified throughout the test.
+- Overall we expect there two be a confirmed booking between User One and User Two at the end of the test. We can make notes if things do not go to plan.
+
 ## Potential issues and ideas for future tests
 - If you sign up, are you automatically logged in, or do you need to re-enter details in Login page?
+- Is there a limit to the number of requests that a user can make/receive?
+- Can a user book multiple places for the same date?
 - There is no delete account feature. Can we list a space then delete our account? What would happen to the space?
 - Accessibility tests
 - Check if styling is responsive to screen size
 - Test the date pickers. See if you can type in invalid dates
-- Test if there are multiple requests for a space, but then one of them gets confirmed. See if requests are denied for other users.
+- Test if there are multiple requests for a space, but then one of them gets confirmed. See if requests are denied for other users
 - Do you stay logged in when you return to the page in the future
 - Can you book a space that you have listed?
+- Is there a limit for how long can it take for a Space owner to confirm or deny a booking? 
+- Do input fields have certain restrictions or character limits?
+- Does the currency for 'price' change for users in different locations?
+- It says in the wireframe that once you list a space, you automatically go back to the Book a Space page. Is there a confirmation message?
 
