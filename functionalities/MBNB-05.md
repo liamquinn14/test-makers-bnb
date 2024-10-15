@@ -1,0 +1,11 @@
+# MBNB-05: User can request to book a space between two chosen dates
+- User can click on 'spaces' link to go to Spaces page, and 'requests' link to go to Requests page. User can sign out and automatically be navigated to a login screen.
+- User can see title and description of the space that they had just clicked on. Never a different space.
+- User can see 'pick a night' text as per wireframe, and date picker to choose dates to book.
+- Date picker greys out dates that are unavailable. These dates are not clickable. The available dates should be a colour that is contrasting enough, and change colour again once clicked to give visual confirmation to the user.
+- The user can request a booking and the page will update for the owner of the space. Confirmation emails will be sent to both users.
+- The page has enough colour contrast for visual accessibility. Fields and buttons can be navigated easily and in correct order with the Tab key, with headings appropriately named for screen readers.
+- The page is responsive to different screen sizes
+- Questions: does the date picker have restrictions. Is it possible to book for an available date that is in the past? Can you book for 2036, or in a million years' time?
+- Is there a confirm pop up before the user officially requests the booking? Otherwise it is too easy to accidentally make a request for the wrong date. If there is a confirm pop up, does it show the user once again the dates that they had chosen? Is there a back button to prevent making a request?
+- Assumptions: the available dates for the space are retrieved from a database, passing on the information to the date picker

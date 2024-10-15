@@ -1,0 +1,15 @@
+# MBNB-07: If a user has requested one of your spaces, you can view, confirm and deny the request
+- User can click on 'spaces' link to go to Spaces page, and 'requests' link to go to Requests page. User can sign out and automatically be navigated to a login screen.
+- User can click 'back' button in the browser to return to their previous screen.
+- User can see 'Request for' text for the particular space that they had just clicked on in the requests page. It displays 'from: ' and the correct email address of the user who made the request. 
+- If there is another request for the same space, it appears in the 'Other requests for this Space'. Clicking on another request presumably takes you to that other request
+- It displays the exact same dates and spaces booked from the request made from the other user. 
+- User can confirm or deny the request. This will update their 'requests' page and send them a confirmation email. The user who submitted the request will have an updated requests page and a confirmation email.
+- Presumably a confirmation message appears, and the user can return to the requests page
+- The page has enough colour contrast for visual accessibility. Fields and buttons can be navigated easily and in correct order with the Tab key, with headings appropriately named for screen readers.
+- The page is responsive to different screen sizes
+- Questions: what does 'number of spaces booked' mean, is it how many people? Where it says 'Date: 12/12/2016' does this mean one night or the first of 4?
+- Is there a delay with the request/confirm/deny process? Do requests pages hot reload or need a hard refresh after another user triggers an event?
+- Is there going to be an 'are you sure?' pop up after confirm or deny are clicked? This would make it harder to accidentally confirm/deny.
+- How does the layout alter if the user has received 100 requests for the same space? Is there a scroll down feature?
+- Assumptions: Details for the requests are retrieved from a database, allowing the page to show up-to-date dynamic data

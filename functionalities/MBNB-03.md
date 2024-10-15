@@ -1,0 +1,14 @@
+# MBNB-03: User can input two dates and find all rooms available between those dates
+- User can click on 'spaces' link to go to Spaces page, and 'requests' link to go to Requests page. User can sign out and automatically be navigated to a login screen.
+- User can see logo, 'List a space' text and description as per wireframe.
+- If the user presses the 'back' button in the browser, they don't get automatically signed out.
+- Input fields are selectable, with the user able to input dates, ideally with a date picker for a smoother UI
+- The list of spaces accurately displays rooms that are available for those dates. This page will look different every time rooms are added/removed. Up-to-date information.
+- For each 'space' component in the list, the title and description look clean and don't overlap into other elements. The description is truncated correctly if necessary.
+- User can click on a particular space in order to see more information about that space 
+- The page has enough colour contrast for visual accessibility. Fields and buttons can be navigated easily and in correct order with the Tab key, with headings appropriately named for screen readers.
+- The page is responsive to different screen sizes
+- Questions: Are spaces displayed even if a date hasn't been inputted? It appears in the wireframe that they do?
+- Can the user type dates in themselves, by typing '12/07/24' with the keyboard? Is there a max length for this input box? Is a date picker? Or both? If the user can input with keyboard are there any validation steps before making the request to the database? Do not want unnecessary API calls when searching for a date in the wrong format. 
+- Will there be other ways to filter spaces? E.g. location?
+- Assumptions: spaces are retrieved by a database, perhaps using SQL to filter results according to date
