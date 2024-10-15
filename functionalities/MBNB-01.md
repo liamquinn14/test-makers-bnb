@@ -8,6 +8,6 @@
 - The page has enough colour contrast for visual accessibility. Fields and buttons can be navigated easily and in correct order with the Tab key, with headings appropriately named for screen readers.
 - If the user navigated to Login then presses the 'back' button in the browser, it will automatically bring them back to the Sign up screen.
 - The page is responsive to different screen sizes
-- Questions:
+- Questions: if you sign up, are you automatically logged in, or do you need to re-enter details in Login page?
 - Assumptions: these details are encrypted and stored securely in a database to protect users' security
 
